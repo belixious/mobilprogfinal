@@ -25,7 +25,7 @@ public class MenuOlustur extends AppCompatActivity {
 
         // 3 farklı alanı doldurmak için 3 farklı intent ve
         // Bu değerleri programın amacı olan rastgele seçmek için
-        // 3 farklı rastgele integer değer atadık.
+        // 3 farklı rastgele integer değer atandı.
         final Intent intent1= getIntent();
         final Intent intent2= getIntent();
         final Intent intent3= getIntent();
@@ -37,10 +37,10 @@ public class MenuOlustur extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // Yemek Ekle Activity'sinden gelen string arrayleri teker teker aldık.
-                // Textview'ların idleri çektik.
-                // Dizi boyutları maksimum alınarak rastgele sayılar oluşturduk.
-                // Text alanlarına string listlerden rastgele indisli değerler atadık.
+                // Yemek Ekle Activity'sinden gelen string arrayleri teker teker alındı.
+                // Textview'ların idleri çekildi.
+                // Dizi boyutları maksimum alınarak rastgele sayılar oluşturuldu.
+                // Text alanlarına string listlerden rastgele indisli değerler atandı.
                 ArrayList<String> s1= intent1.getStringArrayListExtra("mesaj1");
                 ArrayList<String> s2= intent2.getStringArrayListExtra("mesaj2");
                 ArrayList<String> s3= intent3.getStringArrayListExtra("mesaj3");

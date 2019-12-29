@@ -19,21 +19,21 @@ public class YemekEkle extends AppCompatActivity {
         setContentView(R.layout.activity_yemek_ekle);
         Intent intent= getIntent(); // MainActivity'den intent alındı.
 
-        // Yemekleri rastgele çekebilmek için string listlere ihtiyaç duyduk.
-        // Tekrar değiştirilememesi için final olarak ayarladık.
-        // 3 farklı yemek türü olduğu için 3 farklı list oluşturduk.
+        // Yemekleri rastgele çekebilmesi için string listlere ihtiyaç duyuldu.
+        // Tekrar değiştirilememesi için final olarak ayarlandı.
+        // 3 farklı yemek türü olduğu için 3 farklı list oluşturuldu.
         final ArrayList<String> anaYemek= new ArrayList<>();
         final ArrayList<String> araYemek= new ArrayList<>();
         final ArrayList<String> yanYemek= new ArrayList<>();
 
         // Ana, Ara ve Yan Yemek alanlarından yazılan yemek isimlerini
-        // Çekebilmek için 3 farklı edittext değişkeni atadık.
+        // Çekebilmek için 3 farklı edittext değişkeni atandı.
         final EditText ana = (EditText) findViewById(R.id.editText_ana);
         final EditText ara = (EditText) findViewById(R.id.editText_ara);
         final EditText yan = (EditText) findViewById(R.id.editText_yan);
 
-        // Edit texte yazılan değerleri button1 idli butona bastığımızda
-        // Yukarıda oluşturduğumuz string listlere sırasıyla attık.
+        // Edit texte yazılan değerler button1 idli butona basıldığında
+        // Yukarıda oluşturulan string listlere sırasıyla atandı.
         ((Button) findViewById(R.id.button1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +46,7 @@ public class YemekEkle extends AppCompatActivity {
 
         // Menü Oluştur activitysine geçerken rastgele yemek çekebilmek için
         // Intent kütüphanesinin "putStringArrayListExtra" methoduyla string
-        // Array'lerini ilgili yerlerde kullanmak için çektik.
+        // Array'leri ilgili yerlerde kullanılmak için çekildi.
         ((Button) findViewById(R.id.button2)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
